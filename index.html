@@ -1,116 +1,84 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Opésh Overseas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #002d40;
-      color: white;
-      padding: 30px 0;
-      text-align: center;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3em;
-      margin: 0;
-    }
-    nav {
-      background-color: #014a63;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-    section {
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-      border-radius: 12px;
-    }
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2em;
-      color: #014a63;
-    }
-    footer {
-      background-color: #002d40;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-    }
-    .signature {
-      margin-top: 30px;
-      font-style: italic;
-      font-family: 'Playfair Display', serif;
-      color: #555;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="https://opeshoverseas.com/favicon.ico" />
 </head>
-<body>
-  <header>
-    <h1>Opésh Overseas</h1>
-    <p>~ From India to the World</p>
-  </header>  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#science">Products & Science</a>
-    <a href="#contact">Contact</a>
-  </nav>  <section id="home">
-    <h2>Welcome to Opésh Overseas</h2>
-    <p>
-      Bridging the ancient science of Ayurveda with cutting-edge modern technology, we at Opésh Overseas bring you world-class phytochemistry-based nutraceutical products in partnership with industry-leading biotech innovators like GPLife Healthcare Pvt. Ltd.
-    </p>
-  </section>  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      Opésh Overseas is an export enterprise headquartered in India, established with the goal of taking India's finest clinically backed herbal and phytochemical innovations to the global market. Our operations are focused on trust, compliance, transparency, and scientific excellence.
-    </p>
-  </section>  <section id="science">
-    <h2>Products & Science</h2>
-    <p>
-      Our products are:
-      <ul>
-        <li>100% Plant-based with no synthetic excipients</li>
-        <li>Powered by AI-driven phytochemical synergy algorithms</li>
-        <li>Clinically validated in human and animal trials</li>
-        <li>Aligned with HSN 2106 and FSSAI regulations</li>
-        <li>FDA labeling and testing supported via U.S. import partners</li>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header with Navigation -->
+  <header class="bg-gray-900 text-white p-6 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <div>
+        <h1 class="text-3xl font-extrabold tracking-wide">Opésh Overseas</h1>
+        <span class="italic text-sm">~ From India to the World</span>
+      </div>
+      <nav>
+        <ul class="flex space-x-6 text-sm font-medium">
+          <li><a href="#about" class="hover:text-blue-300">About</a></li>
+          <li><a href="#products" class="hover:text-blue-300">Products</a></li>
+          <li><a href="#vision" class="hover:text-blue-300">Vision</a></li>
+          <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-12">
+    
+    <!-- About Section -->
+    <section id="about" class="mb-16 scroll-mt-24">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">About Us</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Opésh Overseas is a globally aspiring export house delivering clinically validated Ayurvedic and phytochemistry-based nutraceuticals, rooted in India’s scientific heritage and powered by cutting-edge innovations. In partnership with GPLife Healthcare Pvt. Ltd. (INR 500 Cr turnover), we are revolutionizing preventive and regenerative healthcare across the globe with scientifically-backed plant-based formulations.
+      </p>
+    </section>
+
+    <!-- Products & Science -->
+    <section id="products" class="mb-16 scroll-mt-24">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">Products & Science</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Our formulations are 100% natural, AI-optimized, and excipient-free, developed through 19 years of R&D. We specialize in:
+      </p>
+      <ul class="list-disc list-inside mt-4 text-gray-700">
+        <li>Diabetes (Type 1 & 2)</li>
+        <li>Kidney Disease (CKD)</li>
+        <li>Arthritis & Joint Pain</li>
+        <li>Heart & Gut Health</li>
+        <li>Anti-aging & Cell Regeneration</li>
       </ul>
-      Key therapeutic areas include diabetes reversal, liver health, kidney function, aging support, arthritis, cardiovascular care, and chronic disease management.
+    </section>
+
+    <!-- Global Vision -->
+    <section id="vision" class="mb-16 scroll-mt-24">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">Global Vision</h2>
+      <p class="text-gray-700 leading-relaxed">
+        We are committed to becoming a trusted global export brand, compliant with FDA and international regulations, while maintaining Ayurvedic authenticity. From the USA to Europe, our focus is on forming strategic partnerships with importers and healthcare providers seeking clinically-backed wellness products.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="mb-16 scroll-mt-24">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">Contact Us</h2>
+      <p class="text-gray-700 leading-relaxed">
+        We are actively seeking partnerships and collaborations. Reach out to us for scientific briefings, product portfolios, and business proposals.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center text-gray-600 text-sm py-6 border-t">
+    <p>© 2025 Opésh Overseas. All rights reserved.</p>
+    <p class="mt-2">
+      For general enquiries: <a href="mailto:info@opeshoverseas.com" class="text-blue-600 hover:underline">info@opeshoverseas.com</a><br>
+      For export-related queries: <a href="mailto:exports@opeshoverseas.com" class="text-blue-600 hover:underline">exports@opeshoverseas.com</a><br>
+      For business or investment opportunities: <a href="mailto:founder@opeshoverseas.com" class="text-blue-600 hover:underline">founder@opeshoverseas.com</a>
     </p>
-  </section>  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>
-      📧 <strong>Founder:</strong> founder@opeshoverseas.com<br />
-      📧 <strong>Exports:</strong> exports@opeshoverseas.com<br />
-      📧 <strong>Info:</strong> info@opeshoverseas.com<br />
-      🌐 <a href="https://www.opeshoverseas.com">www.opeshoverseas.com</a><br />
-      📍 Gurgaon, India
-    </p>
-    <p class="signature">
-      ~ Yours in Wellness,<br />
-      Team Opésh Overseas
-    </p>
-  </section>  <footer>
-    &copy; 2025 Opésh Overseas. All rights reserved.
   </footer>
+
 </body>
 </html>
